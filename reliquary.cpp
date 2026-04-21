@@ -1,4 +1,3 @@
-#include "../modules/executils.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -7,7 +6,19 @@
 #include <sstream>
 #include <regex>
 
+std::string execCommand(const std::string& cmd) {
+    std::array<char, 128> buffer;
+    std::string result;
 
+    FILE* pipe = popen(cmd.c_str(), "r");
+    if (!pipe) return "ERROR";
+
+    while (fgets(buffer.data(), buffer.size(), pipe) != nullptr) {
+        result += buffer.data();
+    }
+    pclose(pipe);
+    return result;
+}
 
 std::vector<std::string> histFiles {
     "~/.bash_history",       
