@@ -19,19 +19,19 @@ Enumerates every user under `/home/`, then reads their history files looking for
 ## Build
 
 ```bash
-g++ histparser.cpp ../modules/executils.cpp -o histparser -std=c++20 -pthread
+g++ reliquary.cpp -o reliquary -std=c++20 -pthread
 ```
 
 ## Usage
 
 ```bash
-./histparser
+./reliquary
 ```
 
 Prints all matching lines to stdout, one per line. Redirect to a file to save results:
 
 ```bash
-./histparser > hits.txt
+./reliquary > hits.txt
 ```
 
 ## Notes
