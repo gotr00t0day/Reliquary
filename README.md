@@ -18,14 +18,8 @@ Enumerates every user under `/home/`, then reads their history files looking for
 
 ## Build
 
-**Standalone:**
 ```bash
 g++ histparser.cpp ../modules/executils.cpp -o histparser -std=c++20 -pthread
-```
-
-**As part of the main ShadowHarvester build:**
-```bash
-make
 ```
 
 ## Usage
