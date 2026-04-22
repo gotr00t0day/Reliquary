@@ -1,5 +1,7 @@
 # Reliquary
 
+![Alt text](https://github.com/gotr00t0day/Reliquary/blob/main/reliquary.jpg)
+
 Scans shell and application history files across all users on a Linux system for credentials, tokens, secrets, and authenticated network requests left in plaintext.
 
 ## What It Does
