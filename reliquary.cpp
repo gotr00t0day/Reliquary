@@ -115,6 +115,7 @@ int main() {
  |_| \_\___|_|_|\__, |\__,_|\__,_|_|   \__, |
                 |___/                  |___/ 
           [ history credential harvester ]
+                    c0d3ninja
 )" << "\n";
     
     std::vector<std::string> historyResults = runHistParser();
